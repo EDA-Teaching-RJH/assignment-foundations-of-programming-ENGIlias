@@ -75,8 +75,11 @@ def update_rank(names, ranks, divs, ids):
         print("Not found.")
 
 def search_crew(names, ranks, divs, ids):
-    #search for a crew member by name
-    pass
+    search = input("Enter name: ")
+    
+    for i in range(len(names)):
+        if search in names[i]:
+            print("Found: " + names[i])
 
 def filter_by_division(names, divs):
     #filter crew members by division
