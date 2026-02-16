@@ -1,4 +1,9 @@
 def init_database():
+    names = ["Alice", "Bob", "Charlie", "Diana"]
+    ranks = ["Captain", "Lieutenant", "Commander"]
+    divs = ["Command", "Operations", "Security", "Engineering", "Medical", "Science"]
+    ids  = [1001, 1002, 1003, 1004, 1005, 1006]
+    return names, ranks, divs, ids
     #create parallel lists for crew names and ranks
     pass
 
