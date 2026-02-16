@@ -8,8 +8,10 @@ def init_database():
     pass
 
 def display_roster(names, ranks, divs, ids):
-    #display the crew roster
-    pass
+    print("CREW ROSTER:")
+    for i in range(len(names)):
+        #display the crew roster
+        pass
 
 def add_member(names, ranks, divs, ids):
     #add a member to the crew
