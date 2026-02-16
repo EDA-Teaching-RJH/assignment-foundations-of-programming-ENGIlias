@@ -17,3 +17,7 @@ def remove_member(names, ranks, divs, ids):
 def update_rank(names, ranks, divs, ids):
     #update a crew member's rank
     pass
+
+def search_member(names, ranks, divs, ids):
+    #search for a crew member by name
+    pass
