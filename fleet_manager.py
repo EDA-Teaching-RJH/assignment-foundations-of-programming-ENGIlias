@@ -74,26 +74,6 @@ def count_officers(ranks):
     pass
 
 def main():
-    print("FLEET MANAGER")
 
-    names, ranks, divisions, ids = init_database()
-
-    while True:
-        print("\n--- MENU ---")
-        print("1. Display Roster")
-        print("2. Add Member")
-        print("3. Remove Member")
-        print("4. Update Rank")
-        print("5. Search")
-        print("6. Filter by Division")
-        print("7. Payroll")
-        print("8. Count Officers")
-        print("9. Exit")
-
-        opt = input("Select: ")
-
-        #should work call function based on input
-        pass
-        
 
 main()#run program
