@@ -1,17 +1,14 @@
 def init_database():
-    names = ["Alice", "Bob", "Charlie", "Diana"]
-    ranks = ["Captain", "Lieutenant", "Commander,", "Jr. Lieutenant"]
-    divs = ["Command", "Operations", "Security", "Engineering"]
-    ids  = [1001, 1002, 1003, 1004]
+    # Basic with 5 items each
+    names = ["Picard", "Riker", "Data", "Worf", "La Forge"]
+    ranks = ["Captain", "Commander", "Lt. Commander", "Lieutenant", "Jr. Lieutenant"]
+    divs = ["Science", "Engineering", "Operations", "Security", "Medic"]
+    ids = [101, 102, 103, 104, 105]
     return names, ranks, divs, ids
-    #create parallel lists for crew names and ranks
-    pass
+
 
 def display_roster(names, ranks, divs, ids):
-    print("CREW ROSTER:")
-    for i in range(len(names)):
-        #display the crew roster
-        pass
+
 
 def add_member(names, ranks, divs, ids):
     new_name = input("Name: ")
