@@ -56,3 +56,5 @@ def main():
         #should work call function based on input
         pass
         
+
+main()#run program
