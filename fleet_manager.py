@@ -64,8 +64,15 @@ def remove_member(names, ranks, divs, ids):
         print("ID not found.")
 
 def update_rank(names, ranks, divs, ids):
-    #update a crew member's rank
-    pass
+    target = int(input("Enter ID: "))
+    
+    if target in ids:
+        idx = ids.index(target)
+        new_rank = input("New Rank: ")
+        ranks[idx] = new_rank
+        print("Updated.")
+    else:
+        print("Not found.")
 
 def search_crew(names, ranks, divs, ids):
     #search for a crew member by name
