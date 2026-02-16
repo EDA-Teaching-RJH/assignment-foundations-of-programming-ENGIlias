@@ -18,7 +18,7 @@ def update_rank(names, ranks, divs, ids):
     #update a crew member's rank
     pass
 
-def search_member(names, ranks, divs, ids):
+def search_crew(names, ranks, divs, ids):
     #search for a crew member by name
     pass
 
@@ -26,10 +26,15 @@ def filter_by_division(names, divs):
     #filter crew members by division
     pass
 
-def calculate_pay(names, ranks):
+def calculate_payroll(names, divs):
     #calculate pay based on rank
     pass
 
 def count_officers(ranks):
     #count the number of officers in the crew
     pass
+
+def main():
+    print("FLEET MANAGER")
+
+    names, ranks, divisions, ids = init_database()
