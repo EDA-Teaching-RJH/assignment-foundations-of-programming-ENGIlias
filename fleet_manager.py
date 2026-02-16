@@ -5,3 +5,7 @@ def init_database():
 def display_roster(names, ranks, divs, ids):
     #display the crew roster
     pass
+
+def add_member(names, ranks, divs, ids):
+    #add a member to the crew
+    pass
