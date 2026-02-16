@@ -1,5 +1,5 @@
 def init_database():
-    # Basic with 5 items each
+    # Basic with 5 
     names = ["Picard", "Riker", "Data", "Worf", "La Forge"]
     ranks = ["Captain", "Commander", "Lt. Commander", "Lieutenant", "Jr. Lieutenant"]
     divs = ["Science", "Engineering", "Operations", "Security", "Medic"]
@@ -8,8 +8,6 @@ def init_database():
 
 def display_menu():
     #display menu and get user input
-    user = input("Enter your name: ")
-    print("User: " + user)
     print("1. Display Roster")
     print("2. Add Member")
     print("3. Remove Member")
@@ -39,7 +37,7 @@ def add_member(names, ranks, divs, ids):
         print("ID already exists. Member not added.")
         return
     
-    #check if rank is valid
+    #check rank is valid
     valid_ranks = ["Captain", "Commander", "Lieutenant"]
     if new_rank not in valid_ranks:
         print("Invalid rank. Member not added.")
@@ -117,6 +115,10 @@ def count_officers(ranks):
 def main():
     # 1. Print title and initialize database
     print("Fleet Manager")
+    #ask once at start for user name
+    user = input("Enter your name: ")
+    print("User: " + user)
+    
     names, ranks, divs, ids = init_database()
 
     # 2. Main loop with menu
