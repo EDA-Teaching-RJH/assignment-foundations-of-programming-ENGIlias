@@ -13,3 +13,7 @@ def add_member(names, ranks, divs, ids):
 def remove_member(names, ranks, divs, ids):
     #remove a member from the crew
     pass
+
+def update_rank(names, ranks, divs, ids):
+    #update a crew member's rank
+    pass
