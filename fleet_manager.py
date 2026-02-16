@@ -9,3 +9,7 @@ def display_roster(names, ranks, divs, ids):
 def add_member(names, ranks, divs, ids):
     #add a member to the crew
     pass
+
+def remove_member(names, ranks, divs, ids):
+    #remove a member from the crew
+    pass
