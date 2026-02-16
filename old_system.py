@@ -80,7 +80,7 @@ def run_system_monolith():
 
         
         fuel = 100
-        consumption = 0
+        consumption = 0 #not used for anything
         while fuel > 0:
             
             print("Idling...")
