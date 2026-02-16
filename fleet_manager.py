@@ -14,7 +14,26 @@ def display_roster(names, ranks, divs, ids):
         pass
 
 def add_member(names, ranks, divs, ids):
+    new_name = input("Name: ")
+    new_rank = input("Rank: ")
+    new_div = input("Division: ")
+    new_id = int(input("ID: "))
     #add a member to the crew
+    if new_id in ids:
+        print("ID already exists. Member not added.")
+        return
+    
+    #check if rank is valid
+    valid_ranks = ["Captain", "Commander", "Lieutenant"]
+    if new_rank not in valid_ranks:
+        print("Invalid rank. Member not added.")
+        return
+    
+    names.append(new_name)
+    ranks.append(new_rank)
+    divs.append(new_div)
+    ids.append(new_id)
+    print("Member added.")
     pass
 
 def remove_member(names, ranks, divs, ids):
