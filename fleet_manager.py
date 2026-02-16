@@ -50,8 +50,18 @@ def add_member(names, ranks, divs, ids):
     pass
 
 def remove_member(names, ranks, divs, ids):
-    #remove a member from the crew
-    pass
+    target = int(input("Enter ID to remove: "))
+    
+    if target in ids:
+        idx = ids.index(target)
+        # Remove from all
+        names.pop(idx)
+        ranks.pop(idx)
+        divs.pop(idx)
+        ids.pop(idx)
+        print("Removed.")
+    else:
+        print("ID not found.")
 
 def update_rank(names, ranks, divs, ids):
     #update a crew member's rank
