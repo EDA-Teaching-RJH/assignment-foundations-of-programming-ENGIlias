@@ -25,3 +25,7 @@ def search_member(names, ranks, divs, ids):
 def filter_by_division(names, divs):
     #filter crew members by division
     pass
+
+def calculate_pay(names, ranks):
+    #calculate pay based on rank
+    pass
