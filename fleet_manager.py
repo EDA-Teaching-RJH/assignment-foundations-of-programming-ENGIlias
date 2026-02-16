@@ -29,3 +29,7 @@ def filter_by_division(names, divs):
 def calculate_pay(names, ranks):
     #calculate pay based on rank
     pass
+
+def count_officers(ranks):
+    #count the number of officers in the crew
+    pass
