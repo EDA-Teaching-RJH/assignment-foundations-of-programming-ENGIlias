@@ -50,7 +50,6 @@ def add_member(names, ranks, divs, ids):
     divs.append(new_div)
     ids.append(new_id)
     print("Member added.")
-    pass
 
 def remove_member(names, ranks, divs, ids):
     target = int(input("Enter ID to remove: "))
@@ -116,6 +115,33 @@ def count_officers(ranks):
     return count
 
 def main():
+    # 1. Print title and initialize database
+    print("Fleet Manager")
+    names, ranks, divs, ids = init_database()
 
+    # 2. Main loop with menu
+    while True:
+        opt = display_menu()
+
+        if opt == "1":
+            display_roster(names, ranks, divs, ids)
+        elif opt == "2":
+            add_member(names, ranks, divs, ids)
+        elif opt == "3":
+            remove_member(names, ranks, divs, ids)
+        elif opt == "4":
+            update_rank(names, ranks, divs, ids)
+        elif opt == "5":
+            search_crew(names, ranks, divs, ids)
+        elif opt == "6":
+            filter_by_division(names, divs)
+        elif opt == "7":
+            calculate_payroll(ranks)
+        elif opt == "8":
+            count_officers(ranks)
+        elif opt == "9":
+            break
+        else:
+            print("Invalid.")
 
 main()#run program
