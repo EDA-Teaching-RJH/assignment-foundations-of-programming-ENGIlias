@@ -17,3 +17,11 @@ Bug 8: Logic Error (Remove Crew) - The removal code assumed the name you typed w
 Bug 9: Logic Error (Fuel) - The fuel loop had a break command right at the start. This meant the loop ran once and then immediately stopped, making the loop completely useless.
 
 Bug 10: Syntax Error (Colon) - Several lines like if x > 5 were missing the colon (:) at the end. In Python, you need a colon to tell the computer "Okay, here comes the code block for this if statement."
+
+The Danger of Parallel Lists:
+
+Parallel lists are tricky because the only thing connecting a person's name to their rank is their position index in the list. If "Picard" is at index 0 in the names list, his rank must be at index 0 in the ranks list.
+
+The big danger is messing up the order. If I delete a name from the names list but forget to delete the matching rank from the ranks list, everything shifts. The next person in the list (like "Riker") would slide into index 0 and accidentally "inherit" Picard's rank. This would ruin the whole database.
+
+To prevent this, In my fleet_manager.py code, I made sure that every time I change one list, I change all four lists at the exact same time.
