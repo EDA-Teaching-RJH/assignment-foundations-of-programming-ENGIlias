@@ -24,6 +24,9 @@ def display_menu():
     return choice
 
 def display_roster(names, ranks, divs, ids):
+    print("--- ROSTER ---")
+    for i in range(len(names)):
+        print(str(ids[i]) + " - " + names[i] + " - " + ranks[i] + " - " + divs[i])
 
 
 def add_member(names, ranks, divs, ids):
