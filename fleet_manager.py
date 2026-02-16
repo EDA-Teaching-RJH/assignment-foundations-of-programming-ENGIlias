@@ -88,9 +88,20 @@ def filter_by_division(names, divs):
         if divs[i] == target:
             print(names[i])
 
-def calculate_payroll(names, divs):
-    #calculate pay based on rank
-    pass
+def calculate_payroll(ranks):
+    total = 0
+    for rank in ranks:
+        if rank == "Captain":
+            total = total + 1000
+        elif rank == "Commander":
+            total = total + 800
+        elif rank == "Lieutenant":
+            total = total + 500
+        elif rank == "Ensign":
+            total = total + 200
+            
+    print("Total: " + str(total))
+    return total
 
 def count_officers(ranks):
     #count the number of officers in the crew
