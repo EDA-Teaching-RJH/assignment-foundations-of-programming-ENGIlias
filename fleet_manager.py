@@ -6,6 +6,22 @@ def init_database():
     ids = [101, 102, 103, 104, 105]
     return names, ranks, divs, ids
 
+def display_menu():
+    #display menu and get user input
+    user = input("Enter your name: ")
+    print("User: " + user)
+    print("1. Display Roster")
+    print("2. Add Member")
+    print("3. Remove Member")
+    print("4. Update Rank")
+    print("5. Search Crew")
+    print("6. Filter by Division")
+    print("7. Calculate Payroll")
+    print("8. Count Officers")
+    print("9. Exit")
+    
+    choice = input("Select option: ")
+    return choice
 
 def display_roster(names, ranks, divs, ids):
 
