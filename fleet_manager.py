@@ -1,3 +1,7 @@
 def init_database():
     #create parallel lists for crew names and ranks
     pass
+
+def display_roster(names, ranks, divs, ids):
+    #display the crew roster
+    pass
