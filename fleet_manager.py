@@ -21,3 +21,7 @@ def update_rank(names, ranks, divs, ids):
 def search_member(names, ranks, divs, ids):
     #search for a crew member by name
     pass
+
+def filter_by_division(names, divs):
+    #filter crew members by division
+    pass
